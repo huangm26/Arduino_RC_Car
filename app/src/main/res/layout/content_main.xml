@@ -9,6 +9,50 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main" tools:context=".MainActivity">
 
-    <TextView android:text="Hello World!" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Up"
+        android:id="@+id/upButton"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Left"
+        android:id="@+id/leftButton"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/upButton"
+        android:layout_toStartOf="@+id/upButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Right"
+        android:id="@+id/rightButton"
+        android:layout_alignTop="@+id/leftButton"
+        android:layout_toEndOf="@+id/upButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Down"
+        android:id="@+id/downButton"
+        android:layout_below="@+id/rightButton"
+        android:layout_toStartOf="@+id/rightButton"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exitButton"
+        android:layout_below="@+id/downButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="69dp" />
+
+
 </RelativeLayout>
