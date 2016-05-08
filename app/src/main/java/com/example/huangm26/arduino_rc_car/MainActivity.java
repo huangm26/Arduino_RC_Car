@@ -45,12 +45,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button downButton = (Button) findViewById(R.id.downButton);
         Button leftButton = (Button) findViewById(R.id.leftButton);
         Button rightButton = (Button) findViewById(R.id.rightButton);
+        Button stopButton = (Button) findViewById(R.id.stopButton);
+        Button hornButton = (Button) findViewById(R.id.hornButton);
         Button exitButton = (Button) findViewById(R.id.exitButton);
         upButton.setOnClickListener(this);
         downButton.setOnClickListener(this);
         leftButton.setOnClickListener(this);
         rightButton.setOnClickListener(this);
+        stopButton.setOnClickListener(this);
         exitButton.setOnClickListener(this);
+        hornButton.setOnClickListener(this);
 
         //set up the bluetooth and open the connection
         setupConnection();
@@ -175,6 +179,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.rightButton:
                 sendControl("4");
+                break;
+            case R.id.stopButton:
+                sendControl("5");
+                break;
+            case R.id.hornButton:
+                sendControl("6");
                 break;
             case R.id.exitButton:
                 closeConnection();

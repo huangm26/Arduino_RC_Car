@@ -45,14 +45,34 @@
         android:layout_toStartOf="@+id/rightButton"
         android:layout_marginTop="30dp" />
 
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop"
+        android:id="@+id/stopButton"
+        android:layout_toStartOf="@+id/rightButton"
+        android:layout_toEndOf="@+id/leftButton"
+        android:layout_below="@+id/downButton"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sound Horn"
+        android:id="@+id/hornButton"
+        android:layout_below="@+id/stopButton"
+        android:layout_centerHorizontal="true" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Exit"
         android:id="@+id/exitButton"
-        android:layout_below="@+id/downButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp" />
+        android:layout_marginBottom="101dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/rightButton" />
+
 
 
 </RelativeLayout>
